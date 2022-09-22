@@ -22,6 +22,10 @@
 body{
     background-color: black;
 }
+.row{
+    display: flex;
+    justify-content: space-between;
+}
 
 
 /* -----
@@ -33,7 +37,14 @@ header{
 }
 button, i, .user{
     color: white;
+    border: 0px;
 }
+header button{
+    padding: 10px;
+    background-color: rgba(128, 128, 128, 0.7) ;
+    border-radius: 7px;
+}
+
 
 /* -----
   MAIN
@@ -41,18 +52,16 @@ button, i, .user{
 
 main{
     display: flex;
-    justify-content: space-between;
-    align-content: center;
     flex-wrap: wrap;
+    justify-content: space-between;
     width: 90%;
-    height: 100vh;
     margin: auto;
 }
 img{
     display: block;
     width: 100%;
 }
-.col{
+main .col{
     margin: 5px 2.5px;
     max-width: calc(100% / 7 - 5px);
 }
@@ -70,4 +79,40 @@ img{
   FOOTER
 ------ */
 
-
+footer{
+    background-color: rgb(128, 128, 128);
+}
+.row .col:nth-child(odd){
+    max-width: 20%;
+}
+.row .col:nth-child(even){
+    max-width: 60%;
+}
+footer button{
+    height: 72px;
+    width: 110px;
+    color: red;
+}
+.col-mid{
+    align-items: center;
+}
+.col-left{
+    align-items: center;
+}
+.col-mid i{
+    margin: 0px 20px;
+}
+.col-left i{
+    margin: 0px 10px;
+}
+.col div{
+    text-align: center;
+    font-size: small;
+    margin-top: 10px;
+}
+.col i{
+    text-align: center;
+}
+.glow{
+    color: greenyellow;
+}
