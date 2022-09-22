@@ -1,8 +1,73 @@
 /* -----
   RESET
 ------ */
+
 *{
     box-sizing: border-box;
     margin: 0PX;
     padding: 0px;
 }
+
+/* -----
+  DEBUG
+------ */
+
+/* .debug main{
+    background-color: aqua;
+} */
+
+/* -----
+  COMMON
+------ */
+body{
+    background-color: black;
+}
+
+
+/* -----
+  HEADER
+------ */
+
+header{
+    text-align: right;
+}
+button, i, .user{
+    color: white;
+}
+
+/* -----
+  MAIN
+------ */
+
+main{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+    height: 100vh;
+    margin: auto;
+}
+img{
+    display: block;
+    width: 100%;
+}
+.col{
+    margin: 5px 2.5px;
+    max-width: calc(100% / 7 - 5px);
+}
+.col .img{
+    position: relative;
+}
+.user{
+    position: absolute;
+    bottom: 0%;
+    background-color: rgba(128, 128, 128, 0.7);
+    padding: 5px;
+}
+
+/* -----
+  FOOTER
+------ */
+
+
