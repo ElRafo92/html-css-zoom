@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: red;
+    height: 100vh;
+}
+header{
+    background-color: purple;
+    height: 30px;
+}
+main{
+    background-color: white;
+    height: calc(100% - 120px);
+    width: 90%;
+    margin: auto;
+    overflow-y: auto;
+}
+footer{
+    background-color: purple;
+    height: 90px;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+.col{
+    height: 200px;
+    width: calc(100% /7 - 20px);
+    background-color: #000;
+    margin: 10px;
+}

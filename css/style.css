@@ -21,6 +21,7 @@
 ------ */
 body{
     background-color: black;
+    height: 100vh;
 }
 .row{
     display: flex;
@@ -34,6 +35,8 @@ body{
 
 header{
     text-align: right;
+    margin-bottom: 10px;
+    height: 30px;
 }
 button, i, .user{
     color: white;
@@ -56,6 +59,7 @@ main{
     justify-content: space-between;
     width: 90%;
     margin: auto;
+    height: calc(100% - 20px);
 }
 img{
     display: block;
@@ -81,6 +85,8 @@ main .col{
 
 footer{
     background-color: rgb(128, 128, 128);
+    margin-top: 10px;
+    height: 90px;
 }
 .row .col:nth-child(odd){
     max-width: 20%;
