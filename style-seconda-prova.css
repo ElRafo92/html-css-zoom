@@ -28,8 +28,16 @@ main{
     flex-wrap: wrap;
 }
 .col{
-    height: 200px;
     width: calc(100% /7 - 20px);
-    background-color: #000;
     margin: 10px;
+}
+img{
+    width: 100%;
+    position: relative;
+    display: block;
+}
+.name{
+    position: absolute;
+    top: 0;
+    left: 0;
 }
